@@ -1,0 +1,14 @@
+<div class="catalogo">
+  <h1>Catálogo de Productos</h1>
+  <nav>
+    <a routerLink="/carrito">🛒 Ir al Carrito</a>
+  </nav>
+  <div class="productos-grid">
+    @for (p of productos; track p.id) {
+      <app-product-card
+        [producto]="p"
+        (agregar)="agregarAlCarrito($event)">
+      </app-product-card>
+    }
+  </div>
+</div>

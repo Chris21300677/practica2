@@ -1,0 +1,45 @@
+<div class="carrito">
+  <h1>🛒 Carrito de Compras</h1>
+  <nav>
+    <a routerLink="/catalogo">← Volver al Catálogo</a>
+  </nav>
+
+  @if (carrito.length === 0) {
+    <p class="vacio">El carrito está vacío.</p>
+  }
+
+  @if (carrito.length > 0) {
+    <table>
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Subtotal</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (p of carrito; track p.id) {
+          <tr>
+            <td>{{ p.nombre }}</td>
+            <td>${{ p.precio }}</td>
+            <td>{{ p.cantidad }}</td>
+            <td>${{ p.precio * (p.cantidad || 1) }}</td>
+            <td><button class="btn-eliminar" (click)="eliminar(p.id)">Eliminar</button></td>
+          </tr>
+        }
+      </tbody>
+    </table>
+
+    <div class="totales">
+      <p><strong>Subtotal:</strong> ${{ carritoService.total.toFixed(2) }}</p>
+      <p><strong>IVA (16%):</strong> ${{ (carritoService.total * 0.16).toFixed(2) }}</p>
+      <p><strong>Total:</strong> ${{ (carritoService.total * 1.16).toFixed(2) }}</p>
+    </div>
+
+    <button class="btn-descargar" (click)="descargarRecibo()">
+      📥 Descargar Recibo XML
+    </button>
+  }
+</div>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productos>
+  <producto>
+    <id>1</id>
+    <nombre>Laptop</nombre>
+    <precio>1200</precio>
+    <imagen>https://placehold.co/150x150?text=Laptop</imagen>
+  </producto>
+  <producto>
+    <id>2</id>
+    <nombre>Smartphone</nombre>
+    <precio>800</precio>
+    <imagen>https://placehold.co/150x150?text=Smartphone</imagen>
+  </producto>
+  <producto>
+    <id>3</id>
+    <nombre>Tablet</nombre>
+    <precio>600</precio>
+    <imagen>https://placehold.co/150x150?text=Tablet</imagen>
+  </producto>
+</productos>

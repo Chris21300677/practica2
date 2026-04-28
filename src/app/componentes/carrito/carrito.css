@@ -85,3 +85,19 @@ th {
 .btn-descargar:hover {
   background: #1e7e34;
 }
+
+.btn-pedido {
+  display: block;
+  background: #28a745;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn-pedido:hover {
+  background: #1e7e34;
+}

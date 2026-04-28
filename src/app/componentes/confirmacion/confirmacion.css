@@ -1,0 +1,64 @@
+.confirmacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.card {
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  padding: 50px 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.icono {
+  width: 80px;
+  height: 80px;
+  background: #28a745;
+  color: white;
+  border-radius: 50%;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+h1 {
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.orden {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #0056b3;
+}

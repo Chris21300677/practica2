@@ -22,6 +22,10 @@ export class CarritoService {
     this.carrito = this.carrito.filter(p => p.id !== id);
   }
 
+  vaciar(): void {
+    this.carrito = [];
+  }
+
   get total(): number {
     return this.carrito.reduce((sum, p) => sum + p.precio * (p.cantidad || 1), 0);
   }
